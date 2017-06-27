@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_beer_bottle"
+        android:layout_width="@dimen/big_image_height"
+        android:layout_height="@dimen/big_image_width" />
+
+    <TextView
+        android:id="@+id/text_error_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/error_title"
+        android:textSize="@dimen/text_headline" />
+
+    <TextView
+        android:id="@+id/text_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/item_padding"
+        android:text="@string/error_message"
+        android:textSize="@dimen/text_body" />
+
+    <Button
+        android:id="@+id/button_reload"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/item_padding"
+        android:text="@string/error_reload" />
+
+</merge>

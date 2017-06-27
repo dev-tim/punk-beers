@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <RelativeLayout
+        android:tag="front"
+        android:background="@drawable/list_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/item_padding">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_beer_bottle"
+            android:layout_width="@dimen/small_image_height"
+            android:layout_height="@dimen/small_image_height"
+            android:layout_marginEnd="5dp" />
+
+        <TextView
+            android:id="@+id/beer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/list_image"
+            android:singleLine="true"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beer_alc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/beer_tagline"
+            android:layout_below="@+id/beer_name"
+            android:layout_alignStart="@+id/beer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small_body" />
+    </RelativeLayout>
+
+    <View android:background="@color/secondary_dark_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp" />
+
+</FrameLayout>
