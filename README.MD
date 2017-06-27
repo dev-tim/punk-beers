@@ -4,6 +4,9 @@ Punk beer challenge is a fun app for real beer fans!
 App fetches information about beers from [Punk API](https://punkapi.com/) using 
 [Retrofit](https://square.github.io/retrofit/) and [OkHttp](http://square.github.io/okhttp/).
 
+![App sample](https://raw.githubusercontent.com/dev-tim/punk-beers/master/gifs/normal_gif.gif "App sample")
+
+[See app no network sample below](#pookie)
 
 ### How to run the app
 
@@ -54,4 +57,9 @@ to orchestrate background task execution.
 In order to keep application component decoupled Dagger 2 was used and in
 separate module we configured components, scopes and modules.
  
+ 
+ 
+#### <a name="pookie">Here is app no network sample (2 gifs at the same time don't look great)</a>
+![App No network sample](https://raw.githubusercontent.com/dev-tim/punk-beers/master/gifs/no_network.gif "App no network sample")
+
 
